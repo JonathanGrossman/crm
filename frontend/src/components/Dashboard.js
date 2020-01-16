@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const getData = () => {
     axios
-      .get("/api/numbers")
+      .get("/api/data")
       .then(res => {
         setData(res.data);
         setIsLoading(false);
