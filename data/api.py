@@ -301,7 +301,7 @@ class DataViewSet(viewsets.ModelViewSet):
             desired_skills_loop(students[i].desired_skills)
             set_desired_skills_loop(students[i].desired_skills)
             interested_courses_loop(students[i].interested_courses)
-            set_desired_skills_loop(students[i].interested_courses)
+            set_interested_courses_loop(students[i].interested_courses)
 
         data = Analysis.objects.get(pk=3)
         data.total_students = len(students)

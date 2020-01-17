@@ -29,10 +29,6 @@ const Students = () => {
     }, 1500);
   }, []);
 
-  useEffect(() => {
-    console.log(students);
-  }, [students]);
-
   return (
     <div className="students-wrapper">
       <h1>List of Students</h1>
@@ -64,14 +60,6 @@ const Students = () => {
               </span>
               <span className="student-row-cell">{student.first_name}</span>
               <span className="student-row-cell">
-                {/* {student.existing_skills.map(skill => (
-                  <div key={skill} className="list-item">
-                    {JSON.parse(skill).selectedName +
-                      " " +
-                      "L" +
-                      JSON.parse(skill).selectedValue}
-                  </div>
-                ))} */}
                 {student.existing_skills.map(skill => (
                   <div key={skill} className="list-item">
                     {skill.selectedName + " " + "L" + skill.selectedValue}
@@ -79,14 +67,6 @@ const Students = () => {
                 ))}
               </span>
               <span className="student-row-cell">
-                {/* {student.desired_skills.map(skill => (
-                  <div key={skill} className="list-item">
-                    {JSON.parse(skill).selectedName +
-                      " " +
-                      "L" +
-                      JSON.parse(skill).selectedValue}
-                  </div>
-                ))} */}
                 {student.desired_skills.map(skill => (
                   <div key={skill} className="list-item">
                     {skill.selectedName + " " + "L" + skill.selectedValue}
@@ -94,14 +74,6 @@ const Students = () => {
                 ))}
               </span>
               <span className="student-row-cell">
-                {/* {student.interested_courses.map(course => (
-                  <div key={course} className="list-item">
-                    {JSON.parse(course).selectedName +
-                      " " +
-                      "L" +
-                      JSON.parse(course).selectedValue}
-                  </div>
-                ))} */}
                 {student.interested_courses.map(course => (
                   <div key={course} className="list-item">
                     {course.selectedName + " " + "L" + course.selectedValue}

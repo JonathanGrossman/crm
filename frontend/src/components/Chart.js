@@ -2,7 +2,7 @@ import React from "react";
 import { Bar, Line, Pie } from "react-chartjs-2";
 
 const Chart = props => {
-  const { chartData } = props;
+  const { chartData, text } = props;
   return (
     <div>
       <Pie
@@ -10,7 +10,7 @@ const Chart = props => {
         options={{
           title: {
             display: "Students",
-            text: "Existing Skills",
+            text: text,
             fontSize: 25
           }
         }}
