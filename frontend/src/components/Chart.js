@@ -10,13 +10,9 @@ const Chart = props => {
         options={{
           title: {
             display: "Students",
-            text: "Current Semester",
+            text: "Existing Skills",
             fontSize: 25
           }
-          //   legend: {
-          //     display: this.props.displayLegend,
-          //     position: this.props.legendPosition
-          //   }
         }}
       />
     </div>
